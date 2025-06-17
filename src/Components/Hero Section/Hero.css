@@ -1,0 +1,128 @@
+.HeroSection{ 
+    align-self: center;
+    height: 98vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.HSection1{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     max-width: 600px;
+}
+
+.HSection1 h1{
+  font-size: 3.5em;
+}
+.HSection1 h4{
+    line-height: 30px;
+   font-size: 1.2em;
+   opacity: 0.8;
+}
+
+
+/* From Uiverse.io by Gaurav-WebDev */ 
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #00B4D8;
+  overflow: hidden;
+  border-radius: 5px;
+  color: #00B4D8;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  letter-spacing: 2px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #00B4D8;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+
+.HSection2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: flex-end;
+  margin-bottom: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: end;
+}
+.HSection2>div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.HSection2 h1{
+  font-size: 2.8em;
+  color:#00B4D8;
+;
+}
+.HSection2 h4{
+   font-size: 1.1em;
+   opacity: 0.8;
+}
+
+
+@media screen and (max-width:900px) {
+  .HeroSection{
+    justify-content: center;
+    margin-top: 100px;
+  }
+   .HSection2{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+   }
+}
+
+@media screen and (max-width:610px) {
+  .HeroSection{
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width:500px) {
+  .HeroSection{
+    font-size: 0.8em;
+    text-align: center;
+  }
+}

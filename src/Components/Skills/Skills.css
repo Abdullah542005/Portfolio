@@ -1,0 +1,87 @@
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  color: #0A88A1;
+  --_c:no-repeat radial-gradient(farthest-side,currentColor 92%,#0000);
+  background: 
+    var(--_c) 50% 0   /12px 12px,
+    var(--_c) 50% 100%/12px 12px,
+    var(--_c) 100% 50%/12px 12px,
+    var(--_c) 0    50%/12px 12px,
+    var(--_c) 50%  50%/12px 12px,
+    conic-gradient(from 90deg at 4px 4px,#0000 90deg,currentColor 0)
+    -4px -4px/calc(50% + 2px) calc(50% + 2px);
+  animation: l8 3s infinite linear;
+}
+@keyframes l8 {to{transform: rotate(.5turn)}}
+
+
+.Skill{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-self: center;
+}
+.Skill>div:nth-child(1){
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Skill>div:nth-child(1) h1{
+   font-size: 1.7em;
+}
+
+.SkillSection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.SkillSection>h1{
+    font-size: 3em;
+}
+.SkillSection>div{
+    align-self: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    flex-grow: 1;
+    justify-content: center;
+}
+.SkillSection h4{
+    font-size: 1.7em;
+}
+.SkillSection>div>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.SkillSection>div img{
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:800px) {
+     .Skill{
+          font-size: 0.9em;
+     }
+}
+
+@media screen and (max-width:500px) {
+     .Skill{
+          font-size: 0.8em;
+     }
+     .SkillSection>div img{
+       height: 40px; 
+    }
+}
+@media screen and (max-width:400px) {
+     .Skill{
+          font-size: 0.7em;
+     }
+}

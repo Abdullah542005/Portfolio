@@ -1,0 +1,22 @@
+.Contact{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}   
+.Contact h1{
+    font-size: 3em;
+}
+.Contact h2{
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:450px) {
+     .Contact{
+        font-size: 0.9em;
+     }
+}

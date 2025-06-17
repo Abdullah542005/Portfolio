@@ -1,0 +1,14 @@
+.StartAnimation{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.StartAnimation>div{
+    height: 100vh;
+    width: 20%;
+    flex-wrap: 1;
+    z-index: 1000;
+    background-color: #00B4D8;
+}
